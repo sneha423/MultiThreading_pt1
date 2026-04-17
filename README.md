@@ -44,9 +44,7 @@ python app.py
 
 # Table Output
 
-| Threads | T=1 | T=2 | T=3 | T=4 | T=5 | T=6 | T=7 | T=8 |
-| T=9 | T=10 | T=11 | T=12 |---|---|---|---|
-| Time Taken (Sec) | 588 | 330 | 238.67 | 189 | 156 | 131.33 | 111.43 | 94.5 | 79.56 | 66| 53.45 | 41.67
+[Download Table File](output/thread_table.csv)
 
 # Graph Output
 
