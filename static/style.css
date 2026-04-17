@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #efefef;
+}
+
+.top-bar {
+  background: #d84d15;
+  color: white;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.top-bar h1 {
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 30px auto;
+}
+
+.dashboard-box {
+  border: 2px solid #777;
+  background: #f3f3f3;
+  padding: 32px 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px 42px;
+  border-radius: 0 0 25px 25px;
+}
+
+.display-card {
+  text-align: center;
+}
+
+.display-card .value {
+  border: 1.5px solid #555;
+  min-height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.display-card .info {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.peach .value {
+  background: #ebc3a3;
+}
+
+.blue .value {
+  background: #d7e3ef;
+}
+
+.green .value {
+  background: #c8ddb8;
+}
+
+.yellow .value {
+  background: #f7c400;
+}
+
+.lavender .value {
+  background: #b9c7e3;
+}
+
+.gray .value {
+  background: #ececec;
+}
+
+.button-area {
+  text-align: center;
+  margin: 30px 0;
+}
+
+button {
+  background: #d84d15;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #b73f10;
+}
+
+.section {
+  background: white;
+  padding: 20px;
+  margin-top: 25px;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+}
+
+.section h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  background: #f0e4e0;
+}
+
+th,
+td {
+  border: 2px solid #333;
+  padding: 12px;
+  font-size: 18px;
+}
+
+canvas {
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+#loadingText {
+  margin-top: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #444;
+  text-align: center;
+}
+
+.output-area {
+  margin-top: 30px;
+  background: white;
+  padding: 20px;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.output-area a {
+  color: #d84d15;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.output-area a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .dashboard-box {
+    grid-template-columns: 1fr;
+  }
+
+  .top-bar {
+    font-size: 18px;
+  }
+}

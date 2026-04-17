@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multithreading Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="top-bar">
+        <h1>Task: Display random values on dashboard</h1>
+    </div>
+
+    <div class="container">
+        <div class="dashboard-box">
+            <div class="display-card peach">
+                <div class="value" id="box1"></div>
+                <div class="info">[10, 20] refresh time = 10</div>
+            </div>
+
+            <div class="display-card blue">
+                <div class="value" id="box2"></div>
+                <div class="info">[-10, 10] refresh time = 20</div>
+            </div>
+
+            <div class="display-card green">
+                <div class="value" id="box3"></div>
+                <div class="info">[-100, 0] refresh time = 8</div>
+            </div>
+
+            <div class="display-card yellow">
+                <div class="value" id="box4"></div>
+                <div class="info">[0, 20] refresh time = 12</div>
+            </div>
+
+            <div class="display-card lavender">
+                <div class="value" id="box5"></div>
+                <div class="info">[-40, 40] refresh time = 16</div>
+            </div>
+
+            <div class="display-card gray">
+                <div class="value" id="box6"></div>
+                <div class="info">[100, 200] refresh time = 14</div>
+            </div>
+        </div>
+
+        <div class="button-area">
+            <button id="runBtn" onclick="loadData()">Run Multithreading Task</button>
+            <div id="loadingText"></div>
+        </div>
+
+        <div class="output-area" id="outputArea" style="display:none;">
+            <h2>Generated Output Files</h2>
+            <p><a id="tableLink" href="#" download>Download Table File</a></p>
+            <p><a id="graphLink" href="#" download>Download Graph Image</a></p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
